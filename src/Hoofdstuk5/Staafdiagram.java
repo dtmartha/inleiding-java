@@ -17,8 +17,9 @@ Voorbeeld 2.1
 */
 
 //importeer de benodigde klassen uit de Java bibliotheek
-import java.awt.*;
+
 import java.applet.*;
+import java.awt. *;
 
 //een klasse met de naam Show van het type Applet
 public class Staafdiagram extends Applet {
@@ -33,10 +34,6 @@ public class Staafdiagram extends Applet {
     int d;
     int e;
     int f;
-    
-
-
-
 
 
     //een (lege) methode die de Applet initialiseert
@@ -54,8 +51,8 @@ public class Staafdiagram extends Applet {
         f = 150;
 
 
-
     }
+
     //een methode die de inhoud van het scherm tekent
     public void paint(Graphics g) {
         g.drawLine(x, 90, x, y);
@@ -68,37 +65,18 @@ public class Staafdiagram extends Applet {
         g.drawString("H", 170, e);
 
         g.setColor(lijn);
-        g.drawString("100", 15, 100 ); /*Tabellen*/
-        g.drawString("80", b, f );
-        g.drawString("60", b, 200 );
-        g.drawString("40", b, 250 );
-        g.drawString("20", b, 300 );
-        g.fillRect(x,245,x,105);
+        g.drawString("100", 15, 100); /*Tabellen*/
+        g.drawString("80", b, f);
+        g.drawString("60", b, 200);
+        g.drawString("40", b, 250);
+        g.drawString("20", b, 300);
+        g.fillRect(x, 245, x, 105);
 
         g.setColor(rood);
-        g.fillRect(100,90,x,260);
+        g.fillRect(100, 90, x, 260);
 
         g.setColor(oranje);
-        g.fillRect(f,145,x,205); /* -y coordinaat + laatste coordinaat*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        g.fillRect(f, 145, x, 205); /* -y coordinaat + laatste coordinaat*/
 
 
     }
