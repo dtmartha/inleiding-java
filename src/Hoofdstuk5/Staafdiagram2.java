@@ -1,28 +1,13 @@
 package Hoofdstuk5;
 
+import java.applet.Applet;
+import java.awt.*;
+
 /**
- * Created by Dilion on 15-9-2016.
+ * Created by Niurca on 16-9-2016.
  */
+public class Staafdiagram2 extends Applet {
 
-/*
-
-@(#)Show.java 1.0 03/02/26
-
-*
-
-Voorbeeld 2.1
-
-*
-
-*/
-
-//importeer de benodigde klassen uit de Java bibliotheek
-
-import java.applet.*;
-import java.awt. *;
-
-//een klasse met de naam Show van het type Applet
-public class Staafdiagram extends Applet {
     Color lijn;
     Color rood;
     Color oranje;
@@ -80,5 +65,4 @@ public class Staafdiagram extends Applet {
 
 
     }
-
 }
