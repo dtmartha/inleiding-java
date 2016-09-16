@@ -13,7 +13,6 @@ public class Staafdiagram2 extends Applet {
     Color oranje;
     int x;
     int y;
-    int a;
     int b;
     int c;
     int d;
@@ -28,7 +27,6 @@ public class Staafdiagram2 extends Applet {
         oranje = Color.orange;
         x = 40;
         y = 350;
-        a = 350;
         b = 25;
         c = 40;
         d = 75;
@@ -38,7 +36,7 @@ public class Staafdiagram2 extends Applet {
 
     }
 
-    //een methode die de inhoud van het scherm tekent
+    //een methode die de inhoud van het scherm tekentg.drawString("60", b, 200);
     public void paint(Graphics g) {
         g.drawLine(x, 90, x, y);
         g.drawLine(x, y, 190, y);
@@ -52,10 +50,11 @@ public class Staafdiagram2 extends Applet {
         g.setColor(lijn);
         g.drawString("100", 15, 100); /*Tabellen*/
         g.drawString("80", b, f);
-        g.drawString("60", b, 200);
+        g.drawString("60", b, 200 );
         g.drawString("40", b, 250);
         g.drawString("20", b, 300);
-        g.fillRect(x, 245, x, 105);
+
+        g.fillRect(x, y-110, x, 110);
 
         g.setColor(rood);
         g.fillRect(100, 90, x, 260);
