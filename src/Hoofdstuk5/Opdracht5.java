@@ -1,24 +1,16 @@
 package Hoofdstuk5;
 
+import java.applet.*;
 import java.applet.Applet;
 import java.awt.*;
 
 /**
  * Created by Niurca on 13-9-2016.
- /*
-
-
-
-
- Voorbeeld 2.1
-
+ * /*
  *
-
+ * Voorbeeld 2.1
  */
-
 //importeer de benodigde klassen uit de Java bibliotheek
-import java.awt.*;
-import java.applet.*;
 
 //een klasse met de naam Opdracht5 van het type Applet
 public class Opdracht5 extends Applet {
@@ -44,8 +36,8 @@ public class Opdracht5 extends Applet {
         breedte = 270;
         hoogte = 150;
         x = 30;
-        xx= 350;
-        xxx= 670;
+        xx = 350;
+        xxx = 670;
         y = 30;
         yy = 70;
         yyy = 285;
@@ -88,21 +80,6 @@ public class Opdracht5 extends Applet {
 
         g.drawOval(xxx + x + x, yyy, 175, 175);
         g.drawString("Cirkel", 800, 475);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }
