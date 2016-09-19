@@ -23,7 +23,7 @@ import java.applet.*;
 public class Secondes extends Applet {
     int a, b, c,d, e;
     double uitkomst;
-    double uitkomst1;
+    int uitkomst1;
     double antwoord;
 
 
