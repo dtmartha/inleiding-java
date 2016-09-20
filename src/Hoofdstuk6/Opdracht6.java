@@ -22,7 +22,7 @@ import java.applet.*;
 
     //een klasse met de naam Opdracht6 van het type Applet
     public class Opdracht6 extends Applet {
-        int a, b, c ;
+        int a, b;
         double uitkomst;
 
 
@@ -34,7 +34,7 @@ import java.applet.*;
         public void init() {
             a = 113;
             b = 4;
-            c = 60;
+
 
             uitkomst = (a / b);
 
