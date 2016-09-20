@@ -16,21 +16,15 @@ Voorbeeld 2.1
 */
 
 //importeer de benodigde klassen uit de Java bibliotheek
+
+import java.applet.Applet;
 import java.awt.*;
-import java.applet.*;
 
 //een klasse met de naam Show van het type Applet
 public class Praktijkopdracht extends Applet {
     double a, b, c, d, e;
     double uitkomst;
     int geheel;
-
-
-
-
-
-
-
 
 
     //een (lege) methode die de Applet initialiseert
@@ -43,20 +37,16 @@ public class Praktijkopdracht extends Applet {
         geheel = 1;
 
 
-        uitkomst = (a+b+c)/d*e;
+        uitkomst = (a + b + c) / d * e;
         geheel = (int) uitkomst;
-        uitkomst = geheel /e;
-
-
-
-
-
+        uitkomst = geheel / e;
 
 
     }
+
     //een methode die de inhoud van het scherm tekent
     public void paint(Graphics g) {
-        g.drawString("gemiddelde " + uitkomst, 50, 60 );
+        g.drawString("gemiddelde " + uitkomst, 50, 60);
     }
 
 }
