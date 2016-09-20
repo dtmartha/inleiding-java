@@ -34,13 +34,15 @@ public class Secondes extends Applet {
         a = 60;
         b = 216000 ;
         c = 1440;
-        d = 15778463;
+        d = 365;
         e = 2;
 
 
         uitkomst = (b/a);
-        uitkomst1 = (d*e);
         antwoord = (c*a);
+        uitkomst1 = (c*a*d);
+
+
 
 
     }
@@ -48,7 +50,7 @@ public class Secondes extends Applet {
     public void paint(Graphics g) {
         g.drawString("in een uur " + uitkomst , 50, 60 );
         g.drawString("in een dag " + antwoord , 50, 80 );
-        g.drawString("in een jaar " + uitkomst1 , 50, 100 );
+        g.drawString("in een jaar " + uitkomst1  , 50, 100 );
 
 
 
