@@ -11,13 +11,13 @@ public class Staafdiagram2 extends Applet {
     Color lijn;
     Color rood;
     Color oranje;
-    int x;
-    int y;
-    int b;
-    int c;
-    int d;
-    int e;
-    int f;
+
+    int yas;
+    int valerie;
+    int hans;
+    int jeroen;
+
+
 
 
     //een (lege) methode die de Applet initialiseert
@@ -25,43 +25,41 @@ public class Staafdiagram2 extends Applet {
         lijn = Color.black;
         rood = Color.red;
         oranje = Color.orange;
-        x = 40;
-        y = 350;
-        b = 25;
-        c = 40;
-        d = 75;
-        e = 370;
-        f = 150;
+        yas = 415;
 
+        //
 
+        valerie = 33*3+25;
+        hans = 66*3+25;
+        jeroen =99*3+25;
     }
-
     //een methode die de inhoud van het scherm tekentg.drawString("60", b, 200);
     public void paint(Graphics g) {
-        g.drawLine(x, 90, x, y);
-        g.drawLine(x, y, 190, y);
+        g.drawLine(40, 90, 40, 415);
+        g.drawLine(45, 415, 190, 415);
 
-        g.drawString("V", 50, e);
+        g.drawString("V", 50, 430);
         g.setColor(rood);
-        g.drawString("J", 110, e);
+        g.drawString("J", 110, 430);
         g.setColor(oranje);
-        g.drawString("H", 170, e);
+        g.drawString("H", 170, 430);
 
         g.setColor(lijn);
-        g.drawString("100", 15, 100); /*Tabellen*/
-        g.drawString("80", b, f);
-        g.drawString("60", b, 200 );
-        g.drawString("40", b, 250);
-        g.drawString("20", b, 300);
+        g.drawString("100",15, 100); /*Tabellen*/
+        g.drawString("80",25, 160);
+        g.drawString("60",25, 220 );
+        g.drawString("40",25, 280);
+        g.drawString("20",25, 340);
+        g.drawString("0",25, 400);
 
-        g.fillRect(x, y-110, x, 110);
+
+        g.fillRect(40, yas-valerie, 40, valerie);
 
         g.setColor(rood);
-        g.fillRect(100, 90, x, 260);
+        g.fillRect(100, yas-hans, 40, hans);
 
         g.setColor(oranje);
-        g.fillRect(f, 145, x, 205); /* -y coordinaat + laatste coordinaat*/
-
+        g.fillRect(150, yas-jeroen, 40, jeroen);
 
     }
 }
