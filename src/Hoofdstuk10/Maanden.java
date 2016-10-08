@@ -48,7 +48,7 @@ public class Maanden extends Applet {
 
                     break;
                 case 2:
-                    tekst = "" + tekst;
+                    tekst = " Februari, 28 dagen ";
 
                     break;
                 case 3:
@@ -98,14 +98,18 @@ public class Maanden extends Applet {
             repaint();
             jaartal = Integer.parseInt(s1);
             if ((jaartal % 4 == 0 && !(jaartal % 100 == 0)) ||
-                    jaartal % 400 == 0 && maand == 2 ) {
-                tekst = "Februari, 28 dagen";
+                    jaartal % 400 == 0 && maand == 2) {
+                tekst = "Februari, 29 dagen";
                 tekst1 = "" + jaartal + " is een schrikkeljaar";
+                repaint();
 
             } else {
                 tekst1 = "" + jaartal + " is geen schrikkeljaar";
-                tekst = "Februari, 29 dagen";
+
+
+
             }
+
             repaint();
 
         }
