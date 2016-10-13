@@ -20,8 +20,6 @@ public class Praktijkopdracht extends Applet {
     double invoer;
     double totaal;
 
-    double gemiddelde;
-
     int aantalcijfers;
     Label titel;
     boolean geklikt;
@@ -46,7 +44,7 @@ public class Praktijkopdracht extends Applet {
 
         if (geklikt) {
             if (invoer >= 10.01) {
-                g.drawString(" Ongeldig cijfer", x, y);
+                g.drawString(" Ongeldige invoer", x, y);
             }
             if (invoer <= 3.0)
                 g.drawString(" slecht", x, 80);
