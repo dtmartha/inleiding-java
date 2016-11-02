@@ -12,6 +12,7 @@ public class Schaakbord extends Applet {
     Color wit;
 
     public void init() {
+        setSize(500, 800);
     }
 
     public void paint(Graphics g) {
@@ -39,7 +40,6 @@ public class Schaakbord extends Applet {
 
                 x += breedte;
             }
-
 
             //tweede rij
             x = 50;
