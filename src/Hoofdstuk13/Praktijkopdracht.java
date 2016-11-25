@@ -7,14 +7,17 @@ import java.awt.*;
  * Created by gebruiker on 17-11-2016.
  */
 public class Praktijkopdracht extends Applet {
-
+    Color donkergroen = new Color(0, 51, 0);
     Color groen;
     Color bruin = new Color(153, 51, 0);
 
 
     public void init() {
+
         setSize(900, 600);
+        setBackground(donkergroen);
         groen = Color.green;
+
 
 
     }
