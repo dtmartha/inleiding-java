@@ -19,13 +19,10 @@ public class Praktijkopdracht extends Applet {
         groen = Color.green;
 
 
-
     }
 
 
     public void paint(Graphics g) {
-        g.setColor(groen);
-        g.setColor(bruin);
         tekenBoom(g);
     }
 
