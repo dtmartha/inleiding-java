@@ -71,6 +71,7 @@ public class Praktijkopdracht extends Applet {
             for (int i = 0; i < nummer.length; i++) {
                 g.drawString(naam[i] + "   " + nummer[i], x, y);
                 y += 25;
+
             }
 
         }

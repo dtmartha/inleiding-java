@@ -15,9 +15,10 @@ public class Opdracht12_3 extends Applet {
     int[] getallen;
     Button knop;
     Label label;
+    String schermtekst;
+
 
     public void init() {
-        setSize(800, 400);
         label = new Label("Voer 5 getallen in");
         add(label);
 
@@ -31,6 +32,12 @@ public class Opdracht12_3 extends Applet {
         knop = new Button("OK");
         add(knop);
         knop.addActionListener(new Knoplistener());
+
+
+    }
+
+    public void paint(Graphics g) {
+        g.drawString(schermtekst, 900, 100);
 
     }
 
@@ -49,7 +56,12 @@ public class Opdracht12_3 extends Applet {
             for (int i = 0; i < getallen.length; i++) {
                 tekstvakken[i].setText(String.valueOf(getallen[i]));
             }
+            schermtekst = "De cijfers staan nu van klein naar groot";
+            repaint();
+
+
         }
+
 
     }
 
