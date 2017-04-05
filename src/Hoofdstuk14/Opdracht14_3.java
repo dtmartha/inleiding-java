@@ -95,7 +95,6 @@ public class Opdracht14_3 extends Applet {
     }
 
     private class knopListener implements ActionListener {
-        @Override
         public void actionPerformed(ActionEvent e) {
             invoer_speler = tekstvak.getText();
             invoer_conv = Integer.parseInt(invoer_speler);
