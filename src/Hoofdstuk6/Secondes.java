@@ -40,9 +40,10 @@ public class Secondes extends Applet {
 
     //een methode die de inhoud van het scherm tekent
     public void paint(Graphics g) {
-        g.drawString("in een uur " + uur, 50, 60);
-        g.drawString("in een dag " + dag, 50, 80);
-        g.drawString("in een jaar " + jaar, 50, 100);
+        g.drawString("Hoeveel secondes zitten in :", 50, 40);
+        g.drawString("in een uur : " + uur + " secondes", 50, 60);
+        g.drawString("in een dag : " + dag + " secondes", 50, 80);
+        g.drawString("in een jaar : " + jaar + " secondes", 50, 100);
 
 
     }
