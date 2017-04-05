@@ -3,6 +3,7 @@ package Hoofdstuk8;
 /**
  * Created by gebruiker on 26-9-2016.
  */
+
 import java.applet.Applet;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -32,7 +33,7 @@ public class BTW extends Applet {
 
     public void paint(Graphics g) {
 
-        g.drawString("€" + uitkomst, 160, 80);
+        g.drawString("€" + uitkomst + " Euro", 160, 80);
         g.drawString("Prijs inclusief BTW", 50, 80);
     }
 
